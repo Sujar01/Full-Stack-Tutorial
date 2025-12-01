@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Background Image -->
+    <header class="main-header">
+        <div class="header-overlay"></div>
+
+        <video autoplay loop muted id="video-background">
+      <source src="https://www.pexels.com/download/video/8859849/" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+        
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <h1 class="site-title">My<span>Portfolio</span></h1>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#about" class="nav-item">About Me</a>
+                    <a href="#work" class="nav-item">My Projects</a>
+                    <a href="#contact" class="nav-item">Get in Touch</a>
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <h2 class="hero-title">Hello, I'm Sujar</h2>
+                <p class="hero-subtitle">Creative Web Developer, Designer, Digital Creator and a Student</p>
+                <p class="hero-description">I build modern, responsive websites with focus on user experience and clean code</p>
+                <a href="#work" class="cta-button">View My Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate web development student currently pursuing my degree in Computer Science. I love turning complex problems into simple, beautiful designs.</p>
+                        <p>My journey in web development started with basic HTML and CSS, and has grown to include JavaScript and PHP. </p>
+                        <p>When I'm not coding, you can find me exploring new design trends, reading tech blogs, or working on personal coding projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="work" class="content-section alt-bg">
+            <div class="section-container">
+                <h2 class="section-title">My Recent Work</h2>
+                <p class="section-subtitle">Here are some projects I've been working on</p>
+                
+                <div class="projects-grid">
+                    <article class="project-item">
+                        <div class="project-header">
+                            <h3>Weather App</h3>
+                            <span class="project-tag">JavaScript/API</span>
+                        </div>
+                        <p>Built a weather application that fetches real-time data from a weather API with location detection.</p>
+                    </article>
+                    
+                    <article class="project-item">
+                        <div class="project-header">
+                            <h3>Task Manager</h3>
+                            <span class="project-tag">JavaScript/LocalStorage</span>
+                        </div>
+                        <p>Created a task management app with drag-and-drop functionality and persistent local storage.</p>
+                    </article>
+                    
+                    <article class="project-item">
+                        <div class="project-header">
+                            <h3>Portfolio Website</h3>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                        <p>Designed and coded a personal portfolio website to showcase projects and skills.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="section-container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Want to talk with me? Send me a message!</p>
+                
+                <div class="contact-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="user-name" class="form-label">Your Name</label>
+                            <input type="text" id="user-name" name="name" class="form-input" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="user-email" class="form-label">Email Address</label>
+                            <input type="email" id="user-email" name="email" class="form-input" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="user-message" class="form-label">Your Message</label>
+                            <textarea id="user-message" name="message" class="form-textarea" rows="5" placeholder="Tell me about yourself..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <div class="form-feedback" id="form-feedback"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; <span id="current-year"></span> My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
