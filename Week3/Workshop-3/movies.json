@@ -1,0 +1,16 @@
+{
+  "movies": [
+    {
+      "id": "bdd5",
+      "title": "Inception",
+      "year": 2010,
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": "aa0d",
+      "title": "Dune",
+      "genre": "Romance",
+      "year": 2024
+    }
+  ]
+}
